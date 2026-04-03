@@ -1,3 +1,11 @@
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/logo-light.svg">
+    <img alt="Opera Flake Logo" src="assets/logo-light.svg" width="500">
+  </picture>
+</p>
+
 # Opera Flakes
 
 This repository provides **Nix Flake** packaging for the **Opera** and **Opera GX** browsers on Linux.
