@@ -22,10 +22,10 @@ You can run the browsers directly using `nix run`:
 
 ```bash
 # Run Opera Stable
-nix run github:yisuidenghua/opera-flake#opera
+nix run github:loeclos/opera-flake#opera
 
 # Run Opera GX
-nix run github:yisuidenghua/opera-flake#opera-gx
+nix run github:loeclos/opera-flake#opera-gx
 ```
 
 
@@ -35,9 +35,9 @@ nix run github:yisuidenghua/opera-flake#opera-gx
 To install the browser into your user profile:
 
 ```bash
-nix profile install github:yisuidenghua/opera-flake#opera
+nix profile install github:loeclos/opera-flake#opera
 
-nix profile install github:yisuidenghua/opera-flake#opera-gx
+nix profile install github:loeclos/opera-flake#opera-gx
 ```
 
 
@@ -53,7 +53,7 @@ Add the flake to your `inputs` and use the provided **overlay** for the cleanest
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     opera-flake = {
-      url = "github:yisuidenghua/opera-flake";
+      url = "github:loeclos/opera-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
